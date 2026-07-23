@@ -1,16 +1,6 @@
 USE [jorgetomaschabrillon_LD6053dissertation]
 GO
 
-/* ============================================================
-   LD6053 Improved Database Schema
-   Purpose:
-   - Remove old objects safely
-   - Store Bronze, Silver and Gold files for both APIs
-   - Support separate dashboard pages for Contracts Finder and GtR
-   - Support fuzzy vs ML matching comparison
-   - Store all current CSV columns plus InsertedDate, ModifiedDate,
-     MatchMethod and MatchingAccuracyPercent
-   ============================================================ */
 
 /* -----------------------------
    1. Drop views first
