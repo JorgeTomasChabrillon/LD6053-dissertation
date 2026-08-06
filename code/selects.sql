@@ -1,27 +1,17 @@
+SELECT COUNT(*) AS OverviewRows
+FROM dbo.vw_Dashboard_Overview;
 
+SELECT COUNT(*) AS ContractsFinderRows
+FROM dbo.vw_Dashboard_ContractsFinder;
 
+SELECT COUNT(*) AS GtRRows
+FROM dbo.vw_Dashboard_GtRResearch;
 
-select top 5 contractAwardId,SponsorID,ContractTitle,ContractValue,SupplierName,AwardDate from ContractsFinderAward
-select top 5 projectID, SponsorID,ProjectTitle,ProjectStatus,LeadOrganisation from GtrProject
+SELECT *
+FROM dbo.vw_MatchingComparisonSummary;
 
+SELECT *
+FROM dbo.vw_AutomatedValidationEvidence;
 
-
-
-
-
-select top 1 * from ContractsFinderAward 
-select top 1 * from GtrProject
-
-
-
-select * from vw_MainCompanies
-select * from vw_PossibleJobs
-
-
-
-
-
-
-
-select * from vw_PossibleSkills
-select * from vw_Filters
+SELECT TOP 20 *
+FROM dbo.DataLoadAudit;
